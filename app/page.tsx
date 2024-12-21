@@ -3,28 +3,11 @@
 import React from "react";
 import styles from "./page.module.css";
 
-const Home = () => {
-  const categories = {
-    "Basic chat": "basic-chat",
-    "Function calling": "function-calling",
-    "File search": "file-search",
-    All: "all",
-  };
-
+export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.title}>
-        Explore sample apps built with Assistants API
-      </div>
-      <div className={styles.container}>
-        {Object.entries(categories).map(([name, url]) => (
-          <a key={name} className={styles.category} href={`/examples/${url}`}>
-            {name}
-          </a>
-        ))}
-      </div>
-    </main>
+    <div className="page-container">
+      <h1>Welcome to OpenAI Assistant</h1>
+      <p>Select a tab above to get started.</p>
+    </div>
   );
-};
-
-export default Home;
+}

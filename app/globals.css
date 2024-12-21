@@ -71,3 +71,8 @@ pre {
   background-color: #e4e4e4;
   color: black;
 }
+
+.page-container {
+  padding-top: 64px;
+  min-height: 100vh;
+}
