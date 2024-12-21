@@ -3,6 +3,8 @@ import "./globals.css";
 import Warnings from "./components/warnings";
 import NavBar from "./components/nav-bar";
 import { assistantId } from "./assistant-config";
+import { ReactNode } from "react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,7 +15,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>

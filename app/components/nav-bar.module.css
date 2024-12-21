@@ -1,5 +1,6 @@
 .navbar {
   width: 100%;
+  height: var(--nav-height);
   background-color: white;
   border-bottom: 1px solid #eaeaea;
   position: fixed;
@@ -9,10 +10,12 @@
 
 .navContainer {
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .navContainer a {
