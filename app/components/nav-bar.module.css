@@ -18,6 +18,13 @@
   align-items: center;
 }
 
+.branchName {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  margin-right: auto;
+}
+
 .navContainer a {
   color: #666;
   text-decoration: none;

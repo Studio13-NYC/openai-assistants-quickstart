@@ -6,10 +6,12 @@ import styles from "./nav-bar.module.css";
 
 const NavBar = () => {
   const pathname = usePathname();
+  const branchName = process.env.NEXT_PUBLIC_BRANCH_NAME || "UNIFII";
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
+        <div className={styles.branchName}>{branchName}</div>
         <Link href="/" className={pathname === "/" ? styles.active : ""}>
           Home
         </Link>
